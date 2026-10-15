@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cat Robot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #faf6f0;
+      color: #2b2320;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; margin-bottom: 32px; }
+    h1 { font-size: 2.4rem; letter-spacing: -0.5px; }
+    .tag { color: #b3541e; font-weight: 600; margin-top: 4px; }
+    .cat-face {
+      width: 90px; height: 64px;
+      margin: 18px auto 0;
+      background: #f59e42;
+      border-radius: 48% 48% 42% 42%;
+      position: relative;
+    }
+    .cat-face::before, .cat-face::after {
+      content: "";
+      position: absolute; top: -16px;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-bottom: 20px solid #f59e42;
+    }
+    .cat-face::before { left: 8px; }
+    .cat-face::after { right: 8px; }
+    .eye {
+      position: absolute; top: 22px;
+      width: 12px; height: 12px;
+      background: #2b2320;
+      border-radius: 50%;
+    }
+    .eye.left { left: 22px; }
+    .eye.right { right: 22px; }
+    section {
+      background: #fff;
+      border: 1px solid #eadfce;
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+    h2 { font-size: 1.15rem; margin-bottom: 8px; color: #b3541e; }
+    ul { padding-left: 20px; }
+    footer { text-align: center; color: #9a8c80; font-size: 0.85rem; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>My Cat Robot</h1>
+      <div class="tag">a small project, one page</div>
+      <div class="cat-face">
+        <span class="eye left"></span>
+        <span class="eye right"></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>What is it?</h2>
+      <p>My cat robot is a small wheeled robot that looks like a cat and
+      acts like one, too. It rolls around the room, watches what I do,
+      and occasionally pretends to be asleep on my desk.</p>
+    </section>
+
+    <section>
+      <h2>What can it do?</h2>
+      <ul>
+        <li>Drive forward and turn on two little wheels</li>
+        <li>Blink its eyes when it is idle</li>
+        <li>Stop when it gets too close to a wall</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <ul>
+        <li>A battery powers everything</li>
+        <li>A small microcontroller runs the logic</li>
+        <li>A distance sensor keeps it away from walls</li>
+      </ul>
+    </section>
+
+    <footer>built step by step</footer>
+  </div>
+</body>
+</html>
